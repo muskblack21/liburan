@@ -1,0 +1,202 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-right: 2px;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff7e5f; 
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background: linear-gradient(135deg, #c49960 0%, #e3e363 100%);
+    padding: 70px 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* CONTAINER UTAMA */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  /* BOOK GRID: 4 BUKU PER BARIS */
+  .book-grid {
+    display: grid;
+    /* 4 kolom */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  /* Card Buku */
+  .book-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  /* Cover Image */
+  .book-cover {
+    width: 100%;
+    height: 180px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  /* Judul Buku */
+  .book-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  /* Penulis */
+  .book-author {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+  
+  /* Rating Bintang */
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    font-size: 1.2rem;
+    color: #ffdd00; /* warna emas */
+  }
+  
+  /* Deskripsi */
+  .book-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Tombol Selengkapnya */
+  .read-more {
+    text-decoration: none;
+    color: #ff7e5f;
+    font-weight: 600;
+    margin-top: auto;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+  
+  /* RESPONSIVE BREAKPOINTS */
+  /* Jika layar < 992px, jadi 3 kolom */
+  @media (max-width: 992px) {
+    .book-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Jika layar < 768px, jadi 2 kolom */
+  @media (max-width: 768px) {
+    .book-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Jika layar < 480px, jadi 1 kolom */
+  @media (max-width: 480px) {
+    .book-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

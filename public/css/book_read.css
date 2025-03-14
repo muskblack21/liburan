@@ -1,0 +1,71 @@
+/* Styling untuk halaman baca buku */
+.read-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.read-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.read-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #f7f7f7;
+}
+
+.read-cover {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.read-info {
+    flex: 1;
+}
+
+.read-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.read-author {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.read-content {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.read-footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    background-color: #f7f7f7;
+}
+
+.back-home-btn {
+    text-decoration: none;
+    padding: 3px 15px;
+    background: #ff7e5f;
+    color: #fff;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background: #ff5733;
+}
